@@ -1,18 +1,41 @@
-# Login Activity Tracker
+# 🛡️ AI-Driven Login Anomaly Detection System
 
-A web application that tracks user login activities with the capability to later add AI-based anomaly detection.
+This project is a **real-time AI-powered cybersecurity system** that monitors login behavior and detects anomalies such as brute force attacks, 
+failed login spikes, and suspicious access locations. It uses **machine learning (Isolation Forest)** 
+and automation to create Jira tickets and send security alerts via email — improving response speed and reducing human error.
 
-## Features
+---
 
-- User registration and authentication
-- Activity logging for all user actions
-- Basic dashboard to view activity logs
-- Secure JWT-based authentication
+## 🚀 Features
 
-## Installation
+- Detects abnormal login activity (e.g., failed login spikes, unusual login times)
+- Tracks IP address, timestamps, and login success/failure
+- Uses **Isolation Forest** for unsupervised anomaly detection
+- Automatically creates a **Jira ticket** for any detected threat
+- Sends **email alerts** to the security team
+- Stores user and login logs securely in **MongoDB**
+- Built with a full stack: **React.js + Node.js + MongoDB + Python**
 
-### Backend Setup
+---
 
-1. Navigate to the server directory:
-   ```bash
-   cd server
+## 🛠️ Installation & Setup
+
+### 🔧 Requirements
+
+- Node.js & MongoDB installed
+- Python 3.x with `pandas` and `scikit-learn`
+- Jira account with REST API access
+- Email credentials for NodeMailer
+
+---
+
+## ⚙️ Backend Setup
+
+```bash
+npm install
+node server.js
+
+👨‍💻 Author
+Ali Hannan Muhammad Nasim
+Student ID: L38886685
+University Academy 92
